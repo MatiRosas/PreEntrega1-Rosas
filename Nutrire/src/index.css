@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Euphoria+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@497&family=Euphoria+Script&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./assets/nutrire-fondo.png") no-repeat center center/cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: #fff4;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container nav .logo {
+  color: #EDE1A5;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family: "Sour Gummy", sans-serif;
+}
+
+.container nav .logo:hover {
+  color: #fff;
+  transition: 0.7s ease-in;
+}
+
+.container .nav-link {
+  display: flex;
+}
+
+.container .nav-link li{
+  list-style: none;
+  margin: 0 0.5rem;
+}
+
+.container ul li a{
+  color: #EDE1A5;
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  font-size: 1.3rem;
+  padding: 0.7rem 1rem;
+  display: block;
+  border-radius: 10px;
+  border-radius: 4px;
+}
+
+
+.container ul li a:hover,
+.container ul li a.active{
+  background-color: #fff3;
+  color: #fff;
+  transition: 0.3s ease-in;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 35%;
+}
+
+.content h2 {
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  font-size: 6rem;
+  color: #fff;
+  padding-top: 20%;
+}
+
+.content h4 {
+  font-size: 1.5rem;
+  color: #fff6;
+}
+
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media(max-width: 768px) {
+  .content h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .container .nav-link {
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #0009;
+    position: absolute;
+    width: 350px;
+    height: 60vh;
+    top: -800px;
+    right: 0;
+    z-index: 10;
+    transition: all 0.7s;
+  }
+
+  .nav-link.active {
+    top: 11%;
+    transition: all 0.7s ease-in;
+  }
+}
+
+
+.product-grid {
+  display: flex;
+  align-items: center;
+}
+
+.product-grid p{
+  font-weight: 700;
+  color: #EDE1A5;
+}
+
+.product-container h2{
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  padding-bottom: 5%;
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+
+.product-card img{
+  max-width: 80%;
+  max-height: 50%;
+}
+
+.product-card button {
+  border: 2px solid #ede1a6;
+  background: url(../src/assets/nutrire-fondo.png) no-repeat center;
+  margin-inline: 15px;
+  color: #fffa;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-items li{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.cart-items ul li img {
+  display: flex;
+  width: 8%;
+  height: 8%;
+  margin: 0.5%;
+}
+
+.cart-items ul li div{
+  padding-inline: 7%;
+}
+.cart-container ul{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cart-items p{
+  color: #EDE1A5;
+  font-weight: bold;
+}
+
+.cart-container button {
+  border: 3px solid #ede1a6;
+  background: url(../src/assets/nutrire-fondo.png) no-repeat center;
+  margin-inline: 15px;
+  color: #fffa;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.cart-container h2, h4{
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+}
+.cart-container h4{
+  color: #EDE1A5;
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1, "name": "Almohaditas Frutilla", "price": 6800, "imgUrl": "./src/assets/almohaditas.jpg"
+    },
+    {
+        "id": 2, "name": "Avena Instantánea", "price": 1800, "imgUrl": "./src/assets/avena.jpg"
+    },
+    {
+        "id": 3, "name": "Barrita de Cereal Integra", "price": 1200, "imgUrl": "./src/assets/barrita-integra.jpg"
+    },
+    {
+        "id": 4, "name": "Barrita de Cereal Mueca", "price": 1200, "imgUrl": "./src/assets/barrita-mueca.jpg"
+    }
+]
